@@ -30,7 +30,7 @@ def calculate_authorized_capital():
     """
     authorized_capital = {"<=1L": 0, "1L to 10L": 0, "10L to 1Cr": 0, "1Cr to 10Cr": 0, ">10Cr": 0}
 
-    with open("../required_data/company_data.csv") as data:
+    with open("../required_data/company_data.csv", encoding="utf-8") as data:
         company_data = csv.DictReader(data)
 
         for company in company_data:
